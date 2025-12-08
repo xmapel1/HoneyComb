@@ -1,0 +1,328 @@
+[
+  {
+    "id": 1,
+    "url": "/images/img1.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 2,
+    "url": "/images/img2.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 3,
+    "url": "/images/img3.jpeg",
+    "tags": ["media", "art"]
+  },
+  {
+    "id": 4,
+    "url": "/images/img4.jpeg",
+    "tags": ["media", "dark"]
+  },
+  {
+    "id": 5,
+    "url": "/images/img5.jpeg",
+    "tags": ["political", "art"]
+  },
+  {
+    "id": 6,
+    "url": "/images/img6.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 7,
+    "url": "/images/img7.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 8,
+    "url": "/images/img8.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 9,
+    "url": "/images/img9.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 10,
+    "url": "/images/img10.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 11,
+    "url": "/images/img11.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 12,
+    "url": "/images/img12.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 13,
+    "url": "/images/img13.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 14,
+    "url": "/images/img14.jpeg",
+    "tags": ["art", "political"]
+  },
+  {
+    "id": 15,
+    "url": "/images/img15.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 16,
+    "url": "/images/img16.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 17,
+    "url": "/images/img17.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 18,
+    "url": "/images/img18.jpeg",
+    "tags": ["political"]
+  },
+  {
+    "id": 19,
+    "url": "/images/img19.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 20,
+    "url": "/images/img20.jpg",
+    "tags": ["art"]
+  },
+  {
+    "id": 21,
+    "url": "/images/img21.jpg",
+    "tags": ["art"]
+  },
+  {
+    "id": 22,
+    "url": "/images/img22.jpg",
+    "tags": ["art"]
+  },
+  {
+    "id": 23,
+    "url": "/images/img23.jpeg",
+    "tags": ["philosophy"]
+  },
+  {
+    "id": 24,
+    "url": "/images/img24.jpeg",
+    "tags": ["philosophy", "political"]
+  },
+  {
+    "id": 25,
+    "url": "/images/img25.jpeg",
+    "tags": ["philosophy", "political"]
+  },
+  {
+    "id": 26,
+    "url": "/images/img26.jpeg",
+    "tags": ["philosophy", "political"]
+  },
+  {
+    "id": 27,
+    "url": "/images/img27.jpeg",
+    "tags": ["philosophy"]
+  },
+  {
+    "id": 28,
+    "url": "/images/img28.jpeg",
+    "tags": ["philosophy"]
+  },
+  {
+    "id": 29,
+    "url": "/images/img29.jpeg",
+    "tags": ["philosophy"]
+  },
+  {
+    "id": 30,
+    "url": "/images/img30.jpeg",
+    "tags": ["philosophy", "political"]
+  },
+  {
+    "id": 31,
+    "url": "/images/img31.jpeg",
+    "tags": ["philosophy", "political"]
+  },
+  {
+    "id": 32,
+    "url": "/images/img32.jpeg",
+    "tags": ["art"]
+  },
+  {
+    "id": 33,
+    "url": "/images/img33.jpeg",
+    "tags": ["political", "dark"]
+  },
+  {
+    "id": 34,
+    "url": "/images/img34.jpeg",
+    "tags": ["dark", "art"]
+  },
+  {
+    "id": 35,
+    "url": "/images/img35.jpeg",
+    "tags": ["dark"]
+  },
+  {
+    "id": 36,
+    "url": "/images/img36.jpeg",
+    "tags": ["dark"]
+  },
+  {
+    "id": 37,
+    "url": "/images/img37.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 38,
+    "url": "/images/img38.jpeg",
+    "tags": ["dark", "art"]
+  },
+  {
+    "id": 39,
+    "url": "/images/img39.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 40,
+    "url": "/images/img40.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 41,
+    "url": "/images/img41.jpeg",
+    "tags": ["media", "art"]
+  },
+  {
+    "id": 42,
+    "url": "/images/img42.jpeg",
+    "tags": ["media", "dark"]
+  },
+  {
+    "id": 43,
+    "url": "/images/img43.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 44,
+    "url": "/images/img44.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 45,
+    "url": "/images/img45.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 46,
+    "url": "/images/img46.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 47,
+    "url": "/images/img47.jpeg",
+    "tags": ["media", "dark"]
+  },
+  {
+    "id": 48,
+    "url": "/images/img48.jpeg",
+    "tags": ["media", "dark"]
+  },
+  {
+    "id": 49,
+    "url": "/images/img49.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 50,
+    "url": "/images/img50.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 51,
+    "url": "/images/img51.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 52,
+    "url": "/images/img52.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 53,
+    "url": "/images/img53.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 54,
+    "url": "/images/img54.jpeg",
+    "tags": ["media", "philosophy"]
+  },
+  {
+    "id": 55,
+    "url": "/images/img55.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 56,
+    "url": "/images/img56.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 57,
+    "url": "/images/img57.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 58,
+    "url": "/images/img58.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 59,
+    "url": "/images/img59.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 60,
+    "url": "/images/img60.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 61,
+    "url": "/images/img61.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 62,
+
+    "url": "/images/img62.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 63,
+    "url": "/images/img63.jpeg",
+    "tags": ["media"]
+  },
+  {
+    "id": 64,
+    "url": "/images/img64.jpeg",
+    "tags": ["art", "dark"]
+  },
+  {
+    "id": 65,
+    "url": "/images/img65.jpeg",
+    "tags": ["art", "dark"]
+  }
+]

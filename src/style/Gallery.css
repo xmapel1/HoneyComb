@@ -1,0 +1,108 @@
+nav {
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 32px;
+  font-size: 20px;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: sans-serif;
+}
+
+.tagSelector {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
+
+.tagbutton {
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.images {
+  column-count: 4; 
+  column-gap: 16px; 
+  margin-top: 24px;
+}
+
+.imagecard {
+  display: inline-block;
+  margin-bottom: 16px;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.imagecard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.imagecard img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.tags {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  color: #333;
+  background: none;
+}
+
+.about {
+  text-align: center;
+  margin-top: 100px;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  font-family: sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.nav-links a {
+  margin-left: 16px;
+  color: black;
+  font-size: 14px;
+}
