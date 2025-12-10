@@ -17,7 +17,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "erasableSyntaxOnly": true,
-    "types": ["node", "vite/client"]
+    "types": ["vite/client", "react", "cypress", "react-dom"]
   },
 
   "include": [

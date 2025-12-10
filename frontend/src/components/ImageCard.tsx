@@ -7,14 +7,13 @@ interface ImageCardProps {
 function ImageCard({ image }: ImageCardProps) {
   return (
     <div className="imagecard">
-      <img src={image.url} />
+      <img src={image.url} alt="cell" />
       <div className="tags">
-        {image.tags &&
-          image.tags.map((tag, index) => (
-            <span key={index} className="tag">
-              {tag}
-            </span>
-          ))}
+        {image.tags.map((tag, index) => (
+          <span key={index} className="tag">
+            {tag}
+          </span>
+        ))}
       </div>
     </div>
   );

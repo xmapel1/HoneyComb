@@ -7,24 +7,36 @@ export type ImageType = {
   id: number;
   url: string;
   tags: string[];
+  user_id?: number;
+  created_at: string;
 };
 
 function Gallery() {
   const [images, setImages] = useState<ImageType[]>([]);
   const [selectedTag, setSelectedTag] = useState("All");
-  const [tags, setTags] = useState<string[]>([]);
+  const [tags, setTags] = useState<string[]>(["All"]);
 
   useEffect(() => {
-    fetch("/data/images.json")
+    fetch("http://localhost:3000/api/cells")
       .then((res) => res.json())
-      .then((data: ImageType[]) => {
-        const shuffled = data.sort(() => Math.random() - 0.5);
-        setImages(shuffled);
+      .then((data: any[]) => {
+        const mapped = data.map((cell) => ({
+          id: cell.id,
+          url: `http://localhost:3000/uploads/${cell.image_url}`,
+          tags: cell.tags || [],
+          user_id: cell.user_id,
+          created_at: cell.created_at,
+        }));
 
-        const tags = new Set<string>();
-        data.forEach((img) => img.tags.forEach((tag) => tags.add(tag)));
-        setTags(["All", ...tags]);
-      });
+        setImages(mapped);
+
+        const tagsSet = new Set<string>();
+        mapped.forEach((img) =>
+          img.tags.forEach((tag: string) => tagsSet.add(tag))
+        );
+        setTags(["All", ...Array.from(tagsSet)]);
+      })
+      .catch((err) => console.error("Failed to fetch images:", err));
   }, []);
 
   const filteredImages =

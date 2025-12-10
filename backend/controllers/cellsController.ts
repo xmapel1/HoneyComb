@@ -3,7 +3,7 @@ import type { Request, Response } from "express";
 
 // CREATE
 export const createCell = async (req: Request, res: Response) => {
-  const { image_url, user_id } = req.body;
+  const { image_url, user_id, tags } = req.body;
 
   if (!image_url || !user_id) {
     return res.status(400).json({ error: "Missing required fields" });
@@ -11,10 +11,10 @@ export const createCell = async (req: Request, res: Response) => {
 
   try {
     const insertResult = await client.query(
-      `INSERT INTO cells (image_url, user_id)
-       VALUES ($1, $2)
+      `INSERT INTO cells (image_url, user_id, tags)
+       VALUES ($1, $2, $3)
        RETURNING *`,
-      [image_url, user_id]
+      [image_url, user_id, tags]
     );
 
     const cell = insertResult.rows[0];
@@ -37,15 +37,56 @@ export const createCell = async (req: Request, res: Response) => {
 export const getCell = async (_req: Request, res: Response) => {
   try {
     const result = await client.query(
-      `SELECT c.*, u.username
+      `SELECT c.*
        FROM cells c
-       LEFT JOIN users u ON c.user_id = u.id
        ORDER BY c.created_at DESC`
     );
 
     res.json(result.rows);
   } catch (error) {
     console.error("Error fetching cells:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};
+
+// UPDATE
+export const updateCell = async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const { image_url, tags } = req.body;
+  try {
+    const result = await client.query(
+      `UPDATE cells
+       SET image_url = $1, tags = $2
+       WHERE id = $3
+       RETURNING *`,
+      [image_url, tags, id]
+    );
+    if (result.rows.length === 0) {
+      return res.status(404).json({ error: "Cell not found" });
+    }
+    res.json(result.rows[0]);
+  } catch (error) {
+    console.error("Error updating cell:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};
+
+// DELETE
+export const deleteCell = async (req: Request, res: Response) => {
+  const { id } = req.params;
+  try {
+    const result = await client.query(
+      `DELETE FROM cells
+        WHERE id = $1
+        RETURNING *`,
+      [id]
+    );
+    if (result.rows.length === 0) {
+      return res.status(404).json({ error: "Cell not found" });
+    }
+    res.json({ message: "Cell deleted successfully" });
+  } catch (error) {
+    console.error("Error deleting cell:", error);
     res.status(500).json({ error: "Internal server error" });
   }
 };

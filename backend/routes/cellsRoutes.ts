@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.post("/", cellsController.createCell);
 router.get("/", cellsController.getCell);
-// router.put("/:id", smultronController.updateSmultron);
-// router.delete("/:id", smultronController.deleteSmultron);
+// router.put("/:id", cellsController.updateCell);
+// router.delete("/:id", cellsController.deleteCell);
 
 export default router;

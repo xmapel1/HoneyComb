@@ -22,6 +22,6 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
 
-    "types": ["node"]
+    "types": ["node", "cors"]
   }
 }
