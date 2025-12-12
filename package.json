@@ -1,9 +1,18 @@
 {
   "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "@cypress/react": "^9.0.1",
+    "@cypress/vite-dev-server": "^7.0.1",
     "@types/cypress": "^0.1.6",
+    "@types/mocha": "^10.0.10",
     "@types/node": "^24.10.2",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "cypress": "^15.7.1",
     "vite": "^7.2.7"
+  },
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^7.0.2"
   }
 }

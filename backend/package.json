@@ -13,8 +13,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
     "@types/cors": "^2.8.19",
+    "@types/cypress": "^0.1.6",
     "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/mocha": "^10.0.10",
     "@types/pg": "^8.15.6",
     "cors": "^2.8.5",
     "cypress": "^15.7.1",
@@ -24,7 +28,9 @@
     "tsx": "^4.21.0"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
     "pg": "^8.16.3"
   }
 }

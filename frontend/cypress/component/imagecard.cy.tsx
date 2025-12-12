@@ -1,5 +1,5 @@
-import ImageCard from "../../src/components/ImageCard";
-import type { ImageType } from "../../src/pages/Gallery";
+import ImageCard from "../../src/components/ImageCard.tsx";
+import type { ImageType } from "../../src/pages/Gallery.tsx";
 
 describe("ImageCard.tsx", () => {
   it("mounts ImageCard and displays the image and tags", () => {
@@ -7,6 +7,7 @@ describe("ImageCard.tsx", () => {
       id: 1,
       url: "cypress/fixtures/image.png",
       tags: ["political", "art"],
+      created_at: new Date().toISOString(),
     };
 
     cy.mount(<ImageCard image={testImage} />);

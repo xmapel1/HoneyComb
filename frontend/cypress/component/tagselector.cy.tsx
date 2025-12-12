@@ -1,4 +1,4 @@
-import TagSelector from "../../src/components/TagSelector";
+import TagSelector from "../../src/components/TagSelector.tsx";
 
 describe("TagSelector.tsx", () => {
   it("mounts TagSelector and allows clicking tag", () => {
