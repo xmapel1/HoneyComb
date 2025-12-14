@@ -1,4 +1,4 @@
-import UpLoader from "../../../src/components/Uploader";
+import UpLoader from "../../src/components/Uploader.tsx";
 import type { ImageType } from "../../src/pages/Gallery.tsx";
 
 describe("UpLoader.tsx", () => {
@@ -10,7 +10,7 @@ describe("UpLoader.tsx", () => {
       created_at: new Date().toISOString(),
     };
 
-    cy.mount(<UpLoader image={testImage} />);
+    cy.mount(<UpLoader />);
 
     cy.get(".file-input").should("exist");
 
