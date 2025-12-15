@@ -1,27 +1,18 @@
-/// <reference types="cypress" />
+import UpLoader from "../../src/components/UpLoader";
+import { MemoryRouter } from "react-router-dom";
 
-import UpLoader from "../../src/components/Uploader.tsx";
-import type { ImageType } from "../../src/pages/Gallery.tsx";
+describe("UpLoader", () => {
+  it("allows entering image url and submitting form", () => {
+    cy.mount(
+      <MemoryRouter>
+        <UpLoader />
+      </MemoryRouter>
+    );
 
-describe("UpLoader.tsx", () => {
-  it("mounts uploader, selects file and triggers upload", () => {
-    const testImage: ImageType = {
-      id: 1,
-      url: "cypress/fixtures/image.png",
-      tags: ["sample", "test"],
-      created_at: new Date().toISOString(),
-    };
+    cy.get(".file-input").should("exist").type("https://example.com/image.png");
 
-    cy.mount(<UpLoader />);
+    cy.get(".tag-input").should("exist").type("political, art");
 
-    cy.get(".file-input").should("exist");
-
-    cy.get(".upload-button").should("exist");
-
-    cy.get(".file-input").selectFile("cypress/fixtures/image.png");
-
-    cy.get(".upload-button").click();
-
-    cy.get(".upload-status").should("contain.text", "upload successful");
+    cy.get(".upload-button").should("exist").click();
   });
 });

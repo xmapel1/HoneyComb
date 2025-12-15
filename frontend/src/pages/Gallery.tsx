@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import TagSelector from "../components/TagSelector";
 import ImageCard from "../components/ImageCard";
+import UpLoader from "../components/UpLoader";
 import "../style/Gallery.css";
 
 export type ImageType = {
@@ -22,7 +23,9 @@ function Gallery() {
       .then((data: any[]) => {
         const mapped = data.map((cell) => ({
           id: cell.id,
-          url: `http://localhost:3000/uploads/${cell.image_url}`,
+          url: cell.image_url.startsWith("http")
+            ? cell.image_url
+            : `http://localhost:3000/uploads/${cell.image_url}`,
           tags: cell.tags || [],
           user_id: cell.user_id,
           created_at: cell.created_at,
@@ -46,6 +49,8 @@ function Gallery() {
 
   return (
     <div className="gallery">
+      <UpLoader />
+
       <div className="tagSelector">
         <TagSelector
           tags={tags}
