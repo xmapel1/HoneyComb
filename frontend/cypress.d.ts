@@ -1,4 +1,12 @@
-/// <reference types="cypress" />
+import { mount } from "cypress/react";
+
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      mount: typeof mount;
+    }
+  }
+}
 
 declare namespace Cypress {
   interface Chainable<Subject = any> {
@@ -8,3 +16,5 @@ declare namespace Cypress {
     ): Chainable<Subject>;
   }
 }
+
+export {};

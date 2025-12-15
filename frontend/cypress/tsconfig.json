@@ -8,5 +8,5 @@
     "isolatedModules": false,
     "noEmit": true
   },
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", "../cypress.d.ts"]
 }
