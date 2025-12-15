@@ -5,7 +5,7 @@ import { mount } from "cypress/react";
 
 declare global {
   namespace Cypress {
-    interface Chainable<Subject = any> {
+    interface Chainable {
       mount: typeof mount;
     }
   }

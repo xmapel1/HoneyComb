@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 import UpLoader from "../../src/components/Uploader.tsx";
 import type { ImageType } from "../../src/pages/Gallery.tsx";
 
