@@ -14,7 +14,7 @@ function App() {
       element: (
         <>
           <nav className="navbar">
-            <div className="logo">Typescript/React Pinterest Clone</div>
+            <div className="logo">HoneyComb</div>
             <div className="nav-links">
               <Link to="/">Gallery</Link>
               <Link to="/about">About</Link>

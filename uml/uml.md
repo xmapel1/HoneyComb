@@ -1,6 +1,5 @@
 # UML – HoneyComb
 
-
 ## Sequence Diagram: Upload Cell
 
 ```mermaid
@@ -18,8 +17,10 @@ sequenceDiagram
   B-->>F: JSON (new cell)
   F-->>U: Gallery updates
 ```
+
 ---
-The interaction between the user, frontend, backend, and database when a cell (image) is uploaded 
+
+The interaction between the user, frontend, backend, and database when a cell (image) is uploaded
 <br></br>
 
 ## Activity Diagram: UpLoader Component Logic
@@ -36,7 +37,9 @@ flowchart TD
   G -->|No| E
   G -->|Yes| H[Update gallery view]
 ```
+
 ---
+
 The internal flow of the uploader component when an image URL is submitted
 <br></br>
 
@@ -71,5 +74,7 @@ classDiagram
     +userId: number
   }
 ```
+
 ---
+
 The main classes in the application and their relationships

@@ -39,7 +39,7 @@ const UpLoader = () => {
 
   return (
     <div className="uploader">
-      <form onSubmit={handleUpload}>
+      <form className="uploader-content" onSubmit={handleUpload}>
         <h2>Upload cell</h2>
 
         <input

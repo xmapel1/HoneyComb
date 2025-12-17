@@ -48,27 +48,28 @@ function Gallery() {
       : images.filter((img) => img.tags.includes(selectedTag));
 
   return (
-    <div className="gallery">
+    <>
       <UpLoader />
+      <div className="gallery">
+        <div className="tagSelector">
+          <TagSelector
+            tags={tags}
+            selectedTag={selectedTag}
+            onTagClick={setSelectedTag}
+          />
+        </div>
 
-      <div className="tagSelector">
-        <TagSelector
-          tags={tags}
-          selectedTag={selectedTag}
-          onTagClick={setSelectedTag}
-        />
+        <div className="images">
+          {filteredImages.length === 0 ? (
+            <p>loading images...</p>
+          ) : (
+            filteredImages.map((image) => (
+              <ImageCard key={image.id} image={image} />
+            ))
+          )}
+        </div>
       </div>
-
-      <div className="images">
-        {filteredImages.length === 0 ? (
-          <p>loading images...</p>
-        ) : (
-          filteredImages.map((image) => (
-            <ImageCard key={image.id} image={image} />
-          ))
-        )}
-      </div>
-    </div>
+    </>
   );
 }
 
