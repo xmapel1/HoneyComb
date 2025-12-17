@@ -209,8 +209,8 @@ nav {
 .uploader input {
   width: 150px;
   padding: 6px 8px;
-
   font-size: 12px;
+  color: black;
   border-radius: 6px;
   border: 1px solid var(--border-soft);
   background-color: white;

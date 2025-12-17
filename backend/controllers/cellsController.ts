@@ -20,7 +20,7 @@ export const createCell = async (req: Request, res: Response) => {
     const cell = insertResult.rows[0];
 
     const userResult = await client.query(
-      `SELECT username FROM users WHERE id = $1`,
+      `SELECT username FROM beekeepers WHERE id = $1`,
       [cell.user_id]
     );
 
